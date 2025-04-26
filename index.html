@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rathod's Ideal Academy</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Rathod's Ideal Academy in Mysore offers expert coaching for CBSE, Karnataka State Board, and commerce professional courses like CA, CS, and CMA.">
+  <meta property="og:title" content="Rathod's Ideal Academy - Mysore">
+  <meta property="og:description" content="Expert coaching for CBSE, State Board, and professional commerce courses.">
+  <meta property="og:image" content="URL_to_your_logo_or_banner_image">
+  <meta property="og:url" content="https://rathodedu.in/">
+  <meta name="theme-color" content="#004aad" />
+  <link rel="icon" href="https://rathodedu.in/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+    :root {
+      --primary-color: #004aad;  /* Deep, Rich Blue */
+      --secondary-color: #f4f7fb; /* Soft, light background */
+      --accent-color: #f29c11; /* Luxury Gold */
+      --highlight-color: #00b4d8; /* Vivid Teal for a Premium Vibe */
+      --dark-blue: #001f4d; /* Elegant Navy */
+      --light-blue: #edf4ff; /* Subtle, Calm Light Blue */
+      --white: #ffffff;
+      --text-color: #333333;
+      --text-light: #888888;
+      --font-heading: 'Roboto Slab', serif;
+      --font-body: 'Poppins', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--white);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, var(--primary-color), var(--dark-blue));
+      padding: 20px 0;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 20px 20px;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: var(--white) !important;
+    }
+
+    .nav-link {
+      color: var(--white) !important;
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin-right: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--accent-color) !important;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary-color), var(--highlight-color));
+      color: var(--white);
+      padding: 120px 0;
+      text-align: center;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      border-radius: 15px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+.cta-btn {
+  margin-top: 20px;
+  padding: 14px 36px;
+  font-size: 1.2rem;
+  background-color: var(--accent-color);
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 25px rgba(242, 156, 17, 0.2);
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.cta-btn:hover {
+  background-color: #ff9d00;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(242, 156, 17, 0.3);
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 15px var(--accent-color), 0 0 30px var(--accent-color), 0 0 60px var(--accent-color);
+  }
+  100% {
+    box-shadow: 0 0 25px var(--accent-color), 0 0 50px var(--accent-color), 0 0 100px var(--accent-color);
+  }
+    }
+
+    .section-heading {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      text-transform: uppercase;
+    }
+
+    .course-card {
+      background: var(--light-blue);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 74, 173, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .course-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--highlight-color);
+      opacity: 0.2;
+      z-index: -1;
+      transition: opacity 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 74, 173, 0.2);
+    }
+
+    .course-card:hover::before {
+      opacity: 0.35;
+    }
+
+    .contact-section {
+      background-color: var(--secondary-color);
+      padding: 70px 0;
+      border-top: 4px solid var(--primary-color);
+    }
+
+    footer {
+      background-color: var(--dark-blue);
+      color: var(--white);
+      padding: 40px 0;
+      text-align: center;
+      box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    iframe {
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Rathod's Ideal Academy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container" data-aos="fade-up">
+      <h1>Unleash Your Academic Brilliance</h1>
+      <p>Join Mysore’s leading coaching center for school & commerce success</p>
+      <a href="#contact" class="cta-btn">Get Started</a>
+    </div>
+  </section>
+
+  <section class="container mt-5" id="courses">
+    <h2 class="section-heading" data-aos="fade-up">Our Courses</h2>
+    <div class="row">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="course-card">
+          <h4>High School</h4>
+          <p>CBSE and State Board (8th–10th) coaching with mock tests, doubt sessions, and smart learning modules.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+        <div class="course-card">
+          <h4>Higher Secondary School</h4>
+          <p>11th–12th Commerce with targeted mentorship, practical learning, and exam-specific strategies.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="course-card">
+          <h4>Professional Courses</h4>
+          <p>CA/CS/CMA foundation & intermediate coaching with top-tier faculty and mentoring system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container mt-5">
+    <h2 class="section-heading" data-aos="fade-up">About Us</h2>
+    <p data-aos="fade-right">At Rathod’s Ideal Academy, we’re not just teachers — we’re mentors who build futures. With elite pedagogy, adaptive learning, and personal attention, we help students achieve their academic and professional dreams.</p>
+  </section>
+
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-heading" data-aos="fade-up">What Our Students Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <p class="lead">"The way subjects were explained was world-class. I scored 95% in 10th because of this academy!"</p>
+            <h5>- Mehek Jain</h5>
+          </div>
+          <div class="carousel-item text-center">
+            <p class="lead">"Excellent mentorship and regular tests helped me build confidence from 8th to 12th grade!"</p>
+            <h5>- Chintan Jain</h5>
+          </div>
+          <div class="carousel-item text-center">
+            <p class="lead">"It’s not just a coaching center — it’s a confidence-building platform. Highly recommended!"</p>
+            <h5>- Pakshal Bhandari</h5>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-heading" data-aos="fade-up">Contact Us</h2>
+      <div class="d-flex justify-content-center">
+        <iframe loading="lazy" src="https://docs.google.com/forms/d/e/1FAIpQLSfMbUu2S7spKrkXq0MWz73VG83r1lGsPRazTYSsV-kE_q660g/viewform?embedded=true" width="640" height="1359" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rathod's Ideal Academy. All rights reserved. For inquiries, call <strong>8431501289</strong>.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
